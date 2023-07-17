@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="./styles/style.css">
+  <script defer src="./scripts/script.js"></script>
+  <title>Students table</title>
+</head>
+<body>
+  <div class="page">
+    <section class="students-list">
+      <form class="row g-3 filter-form">
+        <div class="col-md-3">
+          <label for="name" class="form-label">Filter by name</label>
+          <input type="text" class="form-control" id="name">
+        </div>
+        <div class="col-md-3">
+          <label for="birthday" class="form-label">Filter by birthday</label>
+          <input type="text" class="form-control" id="birthday">
+        </div>
+        <div class="col-md-3">
+          <label for="enter" class="form-label">Filter by enter year</label>
+          <input type="text" class="form-control" id="enter">
+        </div>
+        <div class="col-md-3">
+          <label for="department" class="form-label">Filter by Department</label>
+          <input type="text" class="form-control" id="department">
+        </div>
+        <div class="col-12">
+          <button class="btn btn-outline-dark" type="submit">Filter</button>
+        </div>
+      </form>
+      <button class="btn btn-outline-dark remove-filters-button" type="button">Remove all filters</button>
+      <table class="table table-hover">
+        <thead class="table__head">
+          <tr class="table__head-row">
+            <th scope="col">
+              <button type="button" class="table__button table__button_type_num">#</button>
+            </th>
+            <th scope="col">
+              <button type="button" class="table__button table__button_type_name">Full name</button>
+            </th>
+            <th scope="col">
+              <button type="button" class="table__button table__button_type_birth-date">Date of birth</button>
+            </th>
+            <th scope="col">
+              <button type="button" class="table__button table__button_type_enter-year">Enter year</button>
+            </th>
+            <th scope="col">
+              <button type="button" class="table__button table__button_type_dep">Department</button>
+            </th>
+          </tr>
+        </thead>
+        <tbody class="table__body">
+        </tbody>
+      </table>
+      <button type="button" class="btn btn-outline-dark page__add-button">Add student</button>
+  </section>
+  </div>
+
+  <section class="popup popup_hidden">
+    <div class="popup__container">
+      <button type="button" class="btn-close btn-close-white popup__close-button" aria-label="Close form"></button>
+      <h2 class="popup__heading">Add new student</h2>
+      <form class="popup__form" name="form-edit">
+        <input type="text" class="form-control mb-3 popup__form-item popup__form-item_type_name" name="name" placeholder="First name">
+        <input type="text" class="form-control mb-3 popup__form-item popup__form-item_type_midname" name="midname" placeholder="Middle name">
+        <input type="text" class="form-control mb-3 popup__form-item popup__form-item_type_surname" name="surname" placeholder="Surname">
+        <input type="date" class="form-control mb-3 popup__form-item popup__form-item_type_birth-date" name="birth-date" placeholder="Date of birth">
+        <input type="text" class="form-control mb-3 popup__form-item popup__form-item_type_enter-year" name="enter-year" placeholder="Enter year">
+        <input type="text" class="form-control mb-3 popup__form-item popup__form-item_type_dep" name="department" placeholder="Department">
+        <button type="submit" class="btn btn-outline-dark popup__submit-button" aria-label="Save changes">Submit</button>
+      </form>
+    </div>
+  </section>
+</body>
+</html>
