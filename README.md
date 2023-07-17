@@ -11,4 +11,4 @@ The data from the array is displayed in tabular form. Each row of the table cont
 
 Filters are also displayed before the table. With any changes in the fields for filtering, the contents of the table are changed in accordance with the specified filters. If multiple filters are specified, they are all applied to the student array in turn.
 
-Link to the Github pages: [](https://svet-ko.github.io/student-control-panel/)
+Link to the Github pages: [https://svet-ko.github.io/student-control-panel/](https://svet-ko.github.io/student-control-panel/)
