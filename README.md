@@ -10,3 +10,5 @@ To add students, a form is displayed on the page with fields corresponding to th
 The data from the array is displayed in tabular form. Each row of the table contains information about one student. The first row of the table is the header row, it contains the column headings. When you click on a header cell, the students are sorted according to the corresponding fields.
 
 Filters are also displayed before the table. With any changes in the fields for filtering, the contents of the table are changed in accordance with the specified filters. If multiple filters are specified, they are all applied to the student array in turn.
+
+Link to the Github pages: [](https://svet-ko.github.io/student-control-panel/)
