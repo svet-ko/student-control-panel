@@ -1,5 +1,5 @@
 # Student-control-panel
-A training project to hone the skills of working with arrays and their methods, as well as manipulating the DOM.
+A training project enhance Javascript skills of working with arrays and their methods, as well as manipulating the DOM.
 The layout is made using the ready-made Bootstrap library for styles.
 All user changes are stored in local storage.
 
